@@ -3,7 +3,7 @@
 //We have used both Inline and internal StyleSheet for styling the components, to make the code more readable and maintainable.
 
 import React from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity, StatusBar } from 'react-native';
 import { useRouter } from 'expo-router';
 
 export default function HomeScreen() {
@@ -11,6 +11,7 @@ export default function HomeScreen() {
 
   return (
     <View style={{ flex: 1 }}>
+      <StatusBar barStyle="dark-content" />
       <Image
         style={{
           width: '100%',
