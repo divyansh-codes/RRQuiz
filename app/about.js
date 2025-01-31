@@ -2,7 +2,7 @@
 //We have used both Inline and internal StyleSheet for styling the components, to make the code more readable and maintainable.
 
 import React from 'react';
-import { View, Text, StyleSheet, StatusBar } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { Link } from 'expo-router';
 //AboutScreen function is used to display the information about the project and the developers.
 const AboutScreen = () => {
@@ -13,7 +13,6 @@ const AboutScreen = () => {
       alignItems: 'center',
       padding: 16,
     }}>
-      <StatusBar barStyle="dark-content" />
       <Text style={{
     fontSize: 34,
     fontWeight: 'bold',

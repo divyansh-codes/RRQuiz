@@ -3,7 +3,7 @@
 //We have used both Inline and internal StyleSheet for styling the components, to make the code more readable and maintainable.
 
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, StatusBar } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import { useRouter } from 'expo-router';
 
 //Array of questions, options and correct answers
@@ -95,7 +95,6 @@ export default function QuizScreen() {
   if (isFinished) {
     return (
       <View style={styles.container}>
-        <StatusBar barStyle="dark-content" />
         <Image
           style={{
             width: '100%',
@@ -128,7 +127,6 @@ export default function QuizScreen() {
   }
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="dark-content" />
       <Text style={{
         fontSize: 18,
         fontWeight: 'bold',
