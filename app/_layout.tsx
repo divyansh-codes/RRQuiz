@@ -9,7 +9,7 @@ import { StatusBar } from 'react-native';
 export default function Layout() {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="dark-content" backgroundColor='#F2F2F2'/>
       <Tabs
         screenOptions={{
           tabBarStyle: {
