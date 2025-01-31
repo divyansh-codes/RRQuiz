@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { View, Text, StyleSheet, StatusBar } from 'react-native';
-
+import { Link } from 'expo-router';
 //AboutScreen function is used to display the information about the project and the developers.
 const AboutScreen = () => {
   return (
@@ -21,9 +21,13 @@ const AboutScreen = () => {
   }}>About this Project</Text>
       <Text style={styles.description}>Application is created for educational purposes ONLY.{'\n'}As a Project for Android Development class.{'\n'}{'\n'}</Text>
       <Text style={styles.descriptionhead}>Created by:{'\n'}</Text>
-      <Text style={styles.description}>Siddhi goyal - 22BCAN036{'\n'}Divyansh tiwari - 22BCAN036{'\n'}BCA-H Vth JECRC University, Jaipur 2024{'\n'}{'\n'}</Text>
+      <Text style={styles.description}>Siddhi goyal - 22BCAN037{'\n'}Divyansh tiwari - 22BCAN036{'\n'}BCA-H Vth JECRC University, Jaipur 2024{'\n'}{'\n'}</Text>
       <Text style={styles.descriptionhead}>Technologies Used:</Text>
-      <Text style={styles.description}>React Native, Expo-framework and TypeScript</Text>
+      <Text style={styles.description}>React Native, Expo-framework and TypeScript{'\n'}{'\n'}</Text>
+      <Text style={styles.descriptionhead}>Links :{'\n'}</Text>
+      <Text style={styles.description}><Link style={styles.links} href="https://github.com/divyansh-codes/RRQuiz">RR Quiz Github repository</Link>{'\n'}</Text>
+      <Text style={styles.description}><Link style={styles.links} href="https://github.com/divyansh-codes">Divyansh Github</Link>{'\n'}</Text>
+      <Text style={styles.description}><Link style={styles.links} href="https://github.com/Dev-Siddhi">Siddhi Github</Link>{'\n'}</Text>
     </View>
   );
 };
@@ -38,7 +42,13 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',
+  },
+  links: {
+    color: '#90D5FF',
+    fontWeight: 'bold',
+    fontSize: 18,
   }
+
 });
 
 export default AboutScreen;
